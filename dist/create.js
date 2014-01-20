@@ -2895,6 +2895,7 @@ window.midgardCreate.localize = function (id, language) {
     _create: function() {
       this._super();
       this.widgetEventPrefix = 'midgardeditable';
+      this.options.templates.button = '<button class="create-ui-btn"><i class="icon-<%= icon %>"></i> <%= label %></button>';
     },
 
     prepareMoveButton: function () {
